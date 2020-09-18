@@ -14,27 +14,39 @@ class Cursos extends CI_Controller {
 		$this->load->view('addCursos');
 	}
 
-	public function salvar(){		
-			$this->load->model('cursos_model','cursos');
-			$dados['titulo'] = $this->input->post('titulo');
-			$dados['descricao'] = $this->input->post('descricao');
-
+	public function salvar(){	
+		$this->load->model('cursos_model','cursos');
+		$dados['titulo'] = $this->input->post('titulo');
+		$dados['descricao'] = $this->input->post('descricao');
+		$fileImageName = preg_replace('/\s+/', '', $dados['titulo']).'.png';
+		$dados['imagem'] = base_url().'uploads/'.$fileImageName;
+		$config['upload_path'] = './uploads/';
+         $config['allowed_types'] = 'jpg|png|jpeg';
+		$config['max_size'] = 100;
+        $config['max_width'] = 1024;
+		$config['max_height'] = 768;
+		$config['file_name'] = $fileImageName;
+		$config['overwrite'] = TRUE;
+		$this->load->library('upload');
+		$this->upload->initialize($config);
+		if($this->upload->do_upload('imageURL')){
 			if ($this->input->post('id') != NULL) {			
 				$this->cursos->editarCurso($dados, $this->input->post('id'));
 			} else {
 				$this->cursos->addCurso($dados);
 			}	
-			redirect("/");	
+		}
+		redirect("/");	
 	}
 
 	public function editar($id=NULL){
-			$this->load->model('cursos_model', 'cursos');
-			$query = $this->cursos->getCursoByID($id);
-			if($query==NULL){
-				redirect('/');
-			}
-			$dados['curso'] = $query;
-			$this->load->view('editarCursos',$dados);	
+		$this->load->model('cursos_model', 'cursos');
+		$query = $this->cursos->getCursoByID($id);
+		if($query==NULL){
+			redirect('/');
+		}
+		$dados['curso'] = $query;
+		$this->load->view('editarCursos',$dados);	
 	}
 
 	public function apagar($id=NULL){
