@@ -51,3 +51,5 @@ Para iniciar o projeto acesse esse endereço no navegador:
 O retorno da API pode ser acessada através do endereço:
 
 `http://192.168.1.2:8000/api/cursos`
+
+Verifique o repositório da [aplicação mobile](https://github.com/Jean-Kenned/AppCursos) para configurar o dispositivo mobile para acessar essa API localmente
