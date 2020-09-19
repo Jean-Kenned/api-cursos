@@ -36,9 +36,13 @@ Exemplo:
 
 `$config['base_url'] = 'http://192.168.1.2:8000/';`
 
-## Execução da API
+## Execução da projeto
 
-Para iniciar a API execute o seguinte comando no terminal, utilizando o IP obtido e a porta utilizada, e acesse esse endereço no terminal do navegador:
+Para iniciar o CRUD do projeto execute o seguinte comando no terminal, utilizando o IP obtido e a porta utilizada, e acesse esse endereço no terminal do navegador:
 
 Exemplo :
 `php -S 192.168.1.2:8000`
+
+O retorno da API pode ser acessada através do endereço:
+
+`http://192.168.1.2:8000/api/cursos`
