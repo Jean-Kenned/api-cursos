@@ -25,3 +25,13 @@ Esse comando irá obter o endereço inet.
 Exemplo:
 
 ![title](ImagesReadme/printTerminal.png)
+
+Acesse o seguinte arquivo:
+
+`application/config/config.php`
+
+Procure pela variável `$config['base_url']` e atribua a ela o IP obtido e uma porta.
+
+Exemplo:
+
+`$config['base_url'] = 'http://192.168.1.2:8000/';`
