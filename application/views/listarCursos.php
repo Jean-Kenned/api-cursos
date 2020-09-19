@@ -27,7 +27,6 @@
             <thead>
                 <tr>
                     <th class="text-center">Título</th>
-                    <th class="text-center">Descrição</th>
                     <th class="text-center ">Imagem</th>
                     <th class="text-center">Ações</th>
                 </tr>
@@ -37,12 +36,13 @@
             ?>
             <tr>
                 <td class="text-center align-middle"><?php echo $curso->titulo ?></td>
-                <td class="text-center align-middle"><?php echo $curso->descricao ?></td>
                 <td class="text-center align-middle"><img src="<?php echo $curso->imagem ?>" width="100" height="80">
                 </td>
                 <td class="text-center align-middle">
                     <a href="/cursos/editar/<?php echo $curso->id ?>" title="Editar cadastro"
                         class="btn btn-primary">Editar</a>
+                    <a href="/cursos/detalhes/<?php echo $curso->id ?>" title="Apagar cadastro"
+                        class="btn btn-warning">Detalhes</a>
                     <a href="/cursos/apagar/<?php echo $curso->id ?>" title="Apagar cadastro"
                         class="btn btn-danger">Apagar</a>
                 </td>

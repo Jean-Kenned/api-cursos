@@ -61,4 +61,15 @@ class Cursos extends CI_Controller {
 		redirect('/');
 	}
 
+
+	public function detalhes($id=NULL){
+		$this->load->model('cursos_model', 'cursos');
+		$query = $this->cursos->getCursoByID($id);
+		if($query==NULL){
+			redirect('/');
+		}
+		$dados['curso'] = $query;
+		$this->load->view('detalhesCursos',$dados);	
+	}
+
 }
