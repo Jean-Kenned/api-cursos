@@ -1,4 +1,4 @@
-# WeatherApp
+# Api de Cursos
 
 ## Configuração do Banco de dados
 
@@ -13,3 +13,15 @@
   - **Schema**: api_cursos
   - **User**: root
   - **Password**: 12345
+
+## Configuração localhost para consumir a API em um dispositivo físico mobile
+
+- Executar o seguinte comando no terminal linux:
+
+`ifconfig | grep inet`
+
+Esse comando irá obter o endereço inet.
+
+Exemplo:
+
+![title](ImagesReadme/printTerminal.png)
