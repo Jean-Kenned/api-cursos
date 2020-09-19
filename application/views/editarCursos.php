@@ -40,8 +40,8 @@
         <div class="row">
             <div class="col-md-8">
                 <label>Descrição</label>
-                <textarea type="text" style="height:200px" name="descricao" maxlength="8000"
-                    value="<?php echo $curso->descricao?>" class="form-control" required></textarea>
+                <textarea type="text" style="height:200px" name="descricao" maxlength="8000" class="form-control"
+                    required><?php echo $curso->descricao?></textarea>
             </div>
         </div>
         <br />
