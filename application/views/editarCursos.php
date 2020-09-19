@@ -33,14 +33,15 @@
         <div class="row">
             <div class="col-md-8">
                 <label>Titulo</label>
-                <input type="text" name="titulo" value="<?php echo $curso->titulo?>" class="form-control" required>
+                <input type="text" maxlength="255" name="titulo" value="<?php echo $curso->titulo?>"
+                    class="form-control" required>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8">
                 <label>Descrição</label>
-                <input type="text" name="descricao" value="<?php echo $curso->descricao?>" class="form-control"
-                    required>
+                <textarea type="text" style="height:200px" name="descricao" maxlength="8000"
+                    value="<?php echo $curso->descricao?>" class="form-control" required></textarea>
             </div>
         </div>
         <br />

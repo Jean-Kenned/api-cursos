@@ -33,13 +33,14 @@
         <div class="row">
             <div class="col-md-8">
                 <label>Titulo</label>
-                <input type="text" name="titulo" value="" class="form-control" required>
+                <input type="text" maxlength="255" name="titulo" value="" class="form-control" required>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8">
                 <label>Descrição</label>
-                <input type="text" name="descricao" value="" class="form-control" required>
+                <textarea style="height:200px" type="text" maxlength="8000" name="descricao" value=""
+                    class="form-control" required></textarea>
             </div>
         </div>
         <br />
