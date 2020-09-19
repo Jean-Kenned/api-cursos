@@ -44,7 +44,7 @@ Exemplo:
 
 `php -S 192.168.1.2:8000`
 
-Para iniciar o projeto acesse esse endereço no terminal do navegador:
+Para iniciar o projeto acesse esse endereço no navegador:
 
 `http://192.168.1.2:8000`
 
