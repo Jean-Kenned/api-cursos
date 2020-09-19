@@ -35,3 +35,10 @@ Procure pela variável `$config['base_url']` e atribua a ela o IP obtido e uma p
 Exemplo:
 
 `$config['base_url'] = 'http://192.168.1.2:8000/';`
+
+## Execução da API
+
+Para iniciar a API execute o seguinte comando no terminal, utilizando o IP obtido e a porta utilizada:
+
+Exemplo :
+`php -S 192.168.1.2:8000`
