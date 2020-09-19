@@ -38,10 +38,15 @@ Exemplo:
 
 ## Execução da projeto
 
-Para iniciar o CRUD do projeto execute o seguinte comando no terminal, utilizando o IP obtido e a porta utilizada, e acesse esse endereço no terminal do navegador:
+Execute o seguinte comando no terminal, utilizando o IP obtido e a porta
 
-Exemplo :
+Exemplo:
+
 `php -S 192.168.1.2:8000`
+
+Para iniciar o projeto acesse esse endereço no terminal do navegador:
+
+`http://192.168.1.2:8000`
 
 O retorno da API pode ser acessada através do endereço:
 
