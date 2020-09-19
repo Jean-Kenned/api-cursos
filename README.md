@@ -36,6 +36,12 @@ Exemplo:
 
 `$config['base_url'] = 'http://192.168.1.2:8000/';`
 
+## Instalação das dependências
+
+Execute o seguinte comando no terminal:
+
+`composer install`
+
 ## Execução do projeto
 
 Execute o seguinte comando no terminal, utilizando o IP obtido e a porta
