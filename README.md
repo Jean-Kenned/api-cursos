@@ -38,7 +38,7 @@ Exemplo:
 
 ## Execução da API
 
-Para iniciar a API execute o seguinte comando no terminal, utilizando o IP obtido e a porta utilizada:
+Para iniciar a API execute o seguinte comando no terminal, utilizando o IP obtido e a porta utilizada, e acesse esse endereço no terminal do navegador:
 
 Exemplo :
 `php -S 192.168.1.2:8000`
